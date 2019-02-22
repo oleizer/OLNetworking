@@ -20,6 +20,8 @@
 		A6CEAF20221FADDA00742758 /* NetworkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEAF17221FADDA00742758 /* NetworkType.swift */; };
 		A6CEAF21221FADDA00742758 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CEAF18221FADDA00742758 /* Network.swift */; };
 		A6CEAF23221FAE8B00742758 /* OLNetworking.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A6CEAF22221FAE8B00742758 /* OLNetworking.podspec */; };
+		C5EF0F1404CDB6461D5D217E /* Pods_OLNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BFBBE3AB22291972F2783C /* Pods_OLNetworking.framework */; };
+		FD30152D07BC5493327662C4 /* Pods_OLNetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B167B48BF146252AA7A1AFEB /* Pods_OLNetworkingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35481C600D67F22323B4A6E4 /* Pods-OLNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-OLNetworking/Pods-OLNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		8DB62B5C2E985910DC3C80B0 /* Pods-OLNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLNetworkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OLNetworkingTests/Pods-OLNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FF75241820616C3B8A74E00 /* Pods-OLNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OLNetworking/Pods-OLNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		A6CEAEF4221FADAD00742758 /* OLNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OLNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CEAEF7221FADAD00742758 /* OLNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OLNetworking.h; sourceTree = "<group>"; };
 		A6CEAEF8221FADAD00742758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		A6CEAF17221FADDA00742758 /* NetworkType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkType.swift; sourceTree = "<group>"; };
 		A6CEAF18221FADDA00742758 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		A6CEAF22221FAE8B00742758 /* OLNetworking.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OLNetworking.podspec; sourceTree = "<group>"; };
+		B167B48BF146252AA7A1AFEB /* Pods_OLNetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OLNetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35E2CF9C87D2E34FD0DC660 /* Pods-OLNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLNetworkingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OLNetworkingTests/Pods-OLNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		D1BFBBE3AB22291972F2783C /* Pods_OLNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OLNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5EF0F1404CDB6461D5D217E /* Pods_OLNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6CEAEFE221FADAD00742758 /* OLNetworking.framework in Frameworks */,
+				FD30152D07BC5493327662C4 /* Pods_OLNetworkingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +87,8 @@
 				A6CEAEF6221FADAD00742758 /* OLNetworking */,
 				A6CEAF01221FADAD00742758 /* OLNetworkingTests */,
 				A6CEAEF5221FADAD00742758 /* Products */,
+				A98ABDE11F2F5DBBF0E794AB /* Pods */,
+				AD93F92C1B1563BF2FAED71E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +144,26 @@
 			path = MoyaSugar;
 			sourceTree = "<group>";
 		};
+		A98ABDE11F2F5DBBF0E794AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FF75241820616C3B8A74E00 /* Pods-OLNetworking.debug.xcconfig */,
+				35481C600D67F22323B4A6E4 /* Pods-OLNetworking.release.xcconfig */,
+				8DB62B5C2E985910DC3C80B0 /* Pods-OLNetworkingTests.debug.xcconfig */,
+				B35E2CF9C87D2E34FD0DC660 /* Pods-OLNetworkingTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD93F92C1B1563BF2FAED71E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1BFBBE3AB22291972F2783C /* Pods_OLNetworking.framework */,
+				B167B48BF146252AA7A1AFEB /* Pods_OLNetworkingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -150,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6CEAF08221FADAD00742758 /* Build configuration list for PBXNativeTarget "OLNetworking" */;
 			buildPhases = (
+				34431B28D010262877BA1C3F /* [CP] Check Pods Manifest.lock */,
 				A6CEAEEF221FADAD00742758 /* Headers */,
 				A6CEAEF0221FADAD00742758 /* Sources */,
 				A6CEAEF1221FADAD00742758 /* Frameworks */,
@@ -168,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6CEAF0B221FADAD00742758 /* Build configuration list for PBXNativeTarget "OLNetworkingTests" */;
 			buildPhases = (
+				FB8ABD611C6ED3F5B6866206 /* [CP] Check Pods Manifest.lock */,
 				A6CEAEF9221FADAD00742758 /* Sources */,
 				A6CEAEFA221FADAD00742758 /* Frameworks */,
 				A6CEAEFB221FADAD00742758 /* Resources */,
+				E3825404838E304C165A7866 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +271,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34431B28D010262877BA1C3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OLNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3825404838E304C165A7866 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OLNetworkingTests/Pods-OLNetworkingTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OLNetworkingTests/Pods-OLNetworkingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB8ABD611C6ED3F5B6866206 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OLNetworkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6CEAEF0221FADAD00742758 /* Sources */ = {
@@ -397,6 +511,7 @@
 		};
 		A6CEAF09221FADAD00742758 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF75241820616C3B8A74E00 /* Pods-OLNetworking.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -425,6 +540,7 @@
 		};
 		A6CEAF0A221FADAD00742758 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35481C600D67F22323B4A6E4 /* Pods-OLNetworking.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -452,6 +568,7 @@
 		};
 		A6CEAF0C221FADAD00742758 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DB62B5C2E985910DC3C80B0 /* Pods-OLNetworkingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +588,7 @@
 		};
 		A6CEAF0D221FADAD00742758 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B35E2CF9C87D2E34FD0DC660 /* Pods-OLNetworkingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

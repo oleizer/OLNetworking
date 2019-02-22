@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "10.0"
   spec.swift_version = "4.2"
 
-  spec.source       = { :git => "https://u7211@bitbucket.alfa-bank.kz/scm/abmb/ios-business.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "github.com:oleizer/OLNetworking.git", :tag => "#{spec.version}" }
 
   spec.source_files  = ["**/*.{h,m,swift}"]
   spec.exclude_files  = ["**/*Tests.{swift}"]

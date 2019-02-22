@@ -11,10 +11,10 @@ import PromiseKit
 import Alamofire
 
 
-final class NetworkProvider<T: SugarTargetType>: MoyaProvider<T> {
-    typealias NetworkRequestFuture = (target: T, resolve: (Data) -> Void, reject: (Error) -> Void)
+final public class NetworkProvider<T: SugarTargetType>: MoyaProvider<T> {
+    public typealias NetworkRequestFuture = (target: T, resolve: (Data) -> Void, reject: (Error) -> Void)
     private let provider: MoyaProvider<T>
-    override init(
+    override public init(
         endpointClosure: @escaping MoyaProvider<Target>.EndpointClosure = MoyaProvider<T>.defaultEndpointMapping,
         requestClosure: @escaping MoyaProvider<Target>.RequestClosure = MoyaProvider<T>.defaultRequestMapping,
         stubClosure: @escaping MoyaProvider<Target>.StubClosure = MoyaProvider.neverStub,
@@ -25,7 +25,7 @@ final class NetworkProvider<T: SugarTargetType>: MoyaProvider<T> {
         self.provider = MoyaProvider(endpointClosure: endpointClosure, requestClosure: requestClosure, stubClosure: stubClosure, callbackQueue: callbackQueue, manager: manager, plugins: plugins, trackInflights: trackInflights)
     }
     
-    func send(_ request: NetworkRequestFuture) {
+    public func send(_ request: NetworkRequestFuture) {
         provider.request(request.target) { result in
             self.handleRequest(request: request, result: result)
         }
@@ -88,7 +88,7 @@ extension NetworkProvider {
     }
 }
 extension NetworkProvider {
-    static var serverTrustPolicies: [String: ServerTrustPolicy] {
+    static public var serverTrustPolicies: [String: ServerTrustPolicy] {
         let policyDict: [String: ServerTrustPolicy]
         policyDict = ["vserver064.alfa-bank.kz": .disableEvaluation,
                       "ibank.alfabank.kz": .disableEvaluation,
@@ -96,7 +96,7 @@ extension NetworkProvider {
                       "business-pp.alfabank.kz": .disableEvaluation]
         return policyDict
     }
-    static func tempAlamofireManager() -> Manager {
+    static public  func tempAlamofireManager() -> Manager {
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = Manager.defaultHTTPHeaders
         let trust = ServerTrustPolicyManager(policies: serverTrustPolicies)

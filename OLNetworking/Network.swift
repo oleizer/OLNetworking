@@ -10,14 +10,14 @@
 import Moya
 import PromiseKit
 
-typealias NetworkResponse = Data
+public typealias NetworkResponse = Data
 
-struct Network<T: SugarTargetType>: NetworkType {
-    let provider: NetworkProvider<T>
+public struct Network<T: SugarTargetType>: NetworkType {
+    public let provider: NetworkProvider<T>
 }
 
-extension Network {
-    func request(with target: T) -> Promise<NetworkResponse> {
+public extension Network {
+    public func request(with target: T) -> Promise<NetworkResponse> {
         let (promise, seal) = Promise<NetworkResponse>.pending()
         provider.send((target: target, resolve: seal.fulfill, reject: seal.reject))
         return promise

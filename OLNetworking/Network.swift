@@ -14,6 +14,9 @@ public typealias NetworkResponse = Data
 
 public struct Network<T: SugarTargetType>: NetworkType {
     public let provider: NetworkProvider<T>
+    public init(provider: NetworkProvider<T>) {
+        self.provider = provider
+    }
 }
 
 public extension Network {

@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "OLNetworking"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Бибилиотека для работы с сетью"
 
   spec.description  = <<-DESC
-
+    0.0.2 Network fix
     0.0.1 Первая версия
 
                    DESC
